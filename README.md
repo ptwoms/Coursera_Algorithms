@@ -1,0 +1,13 @@
+## [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1)
+1. [Percolation](http://coursera.cs.princeton.edu/algs4/assignments/percolation.html) |  [percolation-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/percolation-testing.zip)
+2. [Deques and Randomized Queues](http://coursera.cs.princeton.edu/algs4/assignments/queues.html) |  [queues-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/queues.zip)
+3. [Collinear Points](http://coursera.cs.princeton.edu/algs4/assignments/collinear.html) |  [collinear-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/collinear-testing.zip)
+4. [8 Puzzle](http://coursera.cs.princeton.edu/algs4/assignments/8puzzle.html) |  [8puzzle-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/8puzzle-testing.zip)
+5. [Kd-Trees](http://coursera.cs.princeton.edu/algs4/assignments/kdtree.html) | [kdtree-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/kdtree-testing.zip)
+
+## [Algorithms, Part II](https://www.coursera.org/learn/algorithms-part2)
+1. [WordNet](http://coursera.cs.princeton.edu/algs4/assignments/wordnet.html) | [wordnet-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/wordnet-testing.zip)
+2. [Seam Carving](http://coursera.cs.princeton.edu/algs4/assignments/seam.html) | [seam-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/seam-testing.zip)
+3. [Baseball Elimination](http://coursera.cs.princeton.edu/algs4/assignments/baseball.html) | [baseball-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/baseball-testing.zip)
+4. [Boggle](http://coursera.cs.princeton.edu/algs4/assignments/boggle.html) | [boggle-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/boggle-testing.zip)
+5. [Burrows–Wheeler](http://coursera.cs.princeton.edu/algs4/assignments/burrows.html) | [burows-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/burrows-testing.zip)

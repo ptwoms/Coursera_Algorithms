@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/baseball_elimination"/>
+	<classpathentry kind="src" path="src/boggle"/>
+	<classpathentry kind="src" path="src/burrows_wheeler"/>
+	<classpathentry kind="src" path="src/collinear_points"/>
+	<classpathentry kind="src" path="src/deques_and_randomized_queues"/>
+	<classpathentry kind="src" path="src/eight_puzzle"/>
+	<classpathentry kind="src" path="src/kd_trees"/>
+	<classpathentry kind="src" path="src/percolation"/>
+	<classpathentry kind="src" path="src/seam_carving"/>
+	<classpathentry kind="src" path="src/wordnet"/>
+	<classpathentry kind="src" path="sample_data"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
