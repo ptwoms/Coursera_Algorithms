@@ -67,6 +67,8 @@ public class CircularSuffixArray {
 		}
 	}
 	
+	//stack based approach will use up large amount of memory 
+	//Another approach is to do sweeping starting from the end of current segment if everything in the segment is sorted instead of storing the overlapped segments. The first overlapped sub-segment will become the current segment. 
 	private void sort(SuffixIndex[] indexes, UnSortedIndex curUSortedIndex, SuffixIndex[] authArr, Stack<UnSortedIndex> traceStack, int[] counter, int[] incCounter) {
 		Arrays.fill(counter, 0);
 		Arrays.fill(incCounter, 0);
@@ -105,17 +107,17 @@ public class CircularSuffixArray {
 			if(curSortIndex == prevSortIndex) {
 				overlapCount++;
 			}else {
-				addUnsortedIfNeeded(indexes, overlapCount, i-1, curUSortedIndex.depth, traceStack);
+				addUnsortedIfNeeded(indexes, overlapCount, i-1, curUSortedIndex.depth+1, traceStack);
 				overlapCount = 1;
 				prevSortIndex = curSortIndex;
 			}
 		}
-		addUnsortedIfNeeded(indexes, overlapCount, curUSortedIndex.high, curUSortedIndex.depth, traceStack);
+		addUnsortedIfNeeded(indexes, overlapCount, curUSortedIndex.high, curUSortedIndex.depth+1, traceStack);
 	}
 	
-	private void addUnsortedIfNeeded(SuffixIndex[] indexes, int overlapCount, int lastIndex, int curDepth, Stack<UnSortedIndex> tracer) {
-		if(overlapCount > 1 && curDepth < strLength - 2) {
-			UnSortedIndex newPartition = new UnSortedIndex(lastIndex - (overlapCount - 1), lastIndex, curDepth+1);
+	private void addUnsortedIfNeeded(SuffixIndex[] indexes, int overlapCount, int lastIndex, int nextDepth, Stack<UnSortedIndex> tracer) {
+		if(overlapCount > 1 && nextDepth < strLength) {
+			UnSortedIndex newPartition = new UnSortedIndex(lastIndex - (overlapCount - 1), lastIndex, nextDepth);
 			if (overlapCount <= INSERTION_SORT_CUTOFF) {
 				doInsertionSort(indexes, newPartition);
 			}else {
